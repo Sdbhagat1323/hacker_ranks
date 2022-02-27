@@ -25,9 +25,13 @@ Sample Output 0
 
 """
 
-# if __name__ == '__main__':
-#     n = int(input())
-#     integer_list = map(int, input().split())
-#     [x for x in integer_list]
-t = (2)
-print(hash(t))
+from numpy import integer
+
+
+if __name__ == '__main__':
+    n = int(input())
+    integer_list = map(int, input().split())
+    t = tuple(integer_list)
+    print(hash(t))
+    
+    
